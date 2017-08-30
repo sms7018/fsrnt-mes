@@ -1,0 +1,680 @@
+@font-face { font-family: 'NanumGothicBold';
+  src: url(./NanumGothicBold.ttf) format('truetype'); 
+ }
+
+
+// Here you can add other styles
+.main{
+  background-image: url('../assets/img/bgpattern2.png');
+  // background-repeat: no-repeat;
+  // background-position: center;
+  // background-size: cover;
+}
+
+.round-button {
+  display: block;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding-bottom: 3px;
+  width: 110px;
+  height: 80px;
+  background: #263238;
+  color: #ffffff;
+  text-align: center;
+  border: 1px solid #687074;
+  text-decoration: none;
+  // box-shadow: 0 0 5px black;
+  font-size: 18px;
+  font-weight: bold;
+  transition: 800ms ease all;
+}
+
+.round-button:hover {
+  background: #3b444a;
+}
+
+.round-button-arrow {
+  display: block;
+  margin-left: 20px;
+  margin-bottom: 15px;
+  margin-top: 45px;
+  width: 20px;
+  height: 30px;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  background: #263238;
+  cursor: pointer;
+  transition: 1000ms ease all;
+  outline: none;
+  background-image: url('../assets/img/arr_wh.png'); 
+  background-size:contain;
+  background-repeat: no-repeat;
+}
+
+
+.round-button-end {
+  display: block;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding-bottom: 3px;
+  width: 110px;
+  height: 80px;
+  background: #263238;
+  color: #ffffff;
+  text-align: center;
+  border: 1px solid #687074;
+  text-decoration: none;
+  // box-shadow: 0 0 5px black;
+  font-size: 18px;
+  font-weight: bold;
+  transition: 800ms ease all;
+}
+
+.round-button-end:hover {
+  background: #3b444a;
+}
+
+.progress2{
+    width: 150px;
+    height: 150px;
+    //line-height: 150px;
+    background: none;
+    margin-top: 25px;
+    margin-left: 10px;
+    box-shadow: none;
+    position: relative;
+}
+.progress2:after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 12px solid #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.progress2 > span{
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+.progress2 .progress-left{
+    left: 0;
+}
+.progress2 .progress-bar{
+    width: 100%;
+    height: 100%;
+    background: none;
+    border-width: 12px;
+    border-style: solid;
+    position: absolute;
+    top: 0;
+}
+.progress2 .progress-left .progress-bar{
+    left: 100%;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+    border-left: 0;
+    -webkit-transform-origin: center left;
+    transform-origin: center left;
+}
+.progress2 .progress-right{
+    right: 0;
+}
+.progress2 .progress-right .progress-bar{
+    left: -100%;
+    border-top-left-radius: 80px;
+    border-bottom-left-radius: 80px;
+    border-right: 0;
+    -webkit-transform-origin: center right;
+    transform-origin: center right;
+    animation: loading-1 1.8s linear forwards;
+}
+.progress2 .progress-value{
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    background: #44484b;
+    font-size: 24px;
+    color: #fff;
+    line-height: 135px;
+    text-align: center;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+.progress2.blue .progress-bar{
+    border-color: #049dff;
+}
+.progress2.blue .progress-left .progress-bar{
+    animation: loading-2 1.5s linear forwards 1.8s;
+}
+.progress2.yellow .progress-bar{
+    border-color: #fdba04;
+}
+.progress2.yellow .progress-left .progress-bar{
+    animation: loading-3 1s linear forwards 1.8s;
+}
+.progress2.pink .progress-bar{
+    border-color: #ed687c;
+}
+.progress2.pink .progress-left .progress-bar{
+    animation: loading-4 0.4s linear forwards 1.8s;
+}
+.progress2.green .progress-bar{
+    border-color: #1abc9c;
+}
+.progress2.green .progress-left .progress-bar{
+    animation: loading-5 1.2s linear forwards 1.8s;
+}
+@keyframes loading-1{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+}
+@keyframes loading-2{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+}
+@keyframes loading-3{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(30deg);
+        transform: rotate(30deg);
+    }
+}
+@keyframes loading-4{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+}
+@keyframes loading-5{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+}
+@media only screen and (max-width: 990px){
+    .progress{ margin-bottom: 20px; }
+}
+
+.item-button{
+  background:#fff;
+  color:#000;
+  border:none;
+  position:relative;
+  height:auto;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  font-size:1.3em;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+}
+.item-button:hover{
+  background:#fff;
+  color:#000;
+}
+.item-button:before,.item-button:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #000;
+  transition:800ms ease all;
+}
+.item-button:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+.item-button:hover:before,.item-button:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+
+.slash {
+  background:url(http://cdn.zetawiki.com/png/slash.png);
+  background-size:100% 100%;
+}
+
+div.gantt_default_corner div{
+    display: none;
+  }
+
+
+.round-button2 {
+  display: block;
+  margin-left: 15px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding-bottom: 3px;
+  background: #00aadd;
+  width: 90px;
+  height: 90px;
+  border: 1px solid #0883af;
+  border-radius: 10px;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: NanumGothicBold;
+  transition: 800ms ease all;
+}
+
+.round-button2:hover {
+  background: #607d8b;
+}
+
+.round-button-arrow2 {
+  display: block;
+  margin-left: 15px;
+  margin-bottom: 15px;
+  margin-top: 40px;
+  width: 20px;
+  height: 30px;
+  
+  // color: black;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  background: #ffffff;
+  cursor: pointer;
+  transition: 1000ms ease all;
+  outline: none;
+}
+
+// .round-button-arrow2 img {
+//   display: block;
+//   padding: 12%;
+//   height: auto;
+// }
+
+.round-button-end2 {
+  display: block;
+  margin-left: 15px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding-bottom: 3px;
+  background: #303030;
+  width: 90px;
+  height: 90px;
+  border: none;
+  border-radius: 10px;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: NanumGothicBold;
+  transition: 800ms ease all;
+}
+
+.round-button-end2:hover {
+  color: #000;
+  background: #ffffff;
+}
+
+.dnd-drag-start {
+    -moz-transform:scale(0.8);
+    -webkit-transform:scale(0.8);
+    transform:scale(0.8);
+    opacity:0.7;
+    border: 2px dashed #000;
+}
+
+.dnd-drag-enter {
+    opacity:0.7;
+    border: 2px dashed #000;
+}
+
+.dnd-drag-over {
+    border: 2px dashed #000;
+}
+
+.dnd-sortable-drag {
+  -moz-transform:scale(0.9);
+  -webkit-transform:scale(0.9);
+  transform:scale(0.9);
+  opacity:0.7;
+  border: 1px dashed #000;
+}
+
+//
+// Panels
+// --------------------------------------------------
+
+
+// Base class
+.panel {
+  margin-bottom: $line-height-computed;
+  background-color: $panel-bg;
+  border: 1px solid transparent;
+  border-radius: $panel-border-radius;
+  @include box-shadow(0 1px 1px rgba(0,0,0,.05));
+}
+
+// Panel contents
+.panel-body {
+  padding: $panel-body-padding;
+  @include clearfix;
+}
+
+// Optional heading
+.panel-heading {
+  padding: $panel-heading-padding;
+  border-bottom: 1px solid transparent;
+  @include border-top-radius(($panel-border-radius - 1));
+
+  > .dropdown .dropdown-toggle {
+    color: inherit;
+  }
+}
+
+// Within heading, strip any `h*` tag of its default margins for spacing.
+.panel-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: ceil(($font-size-base * 1.125));
+  color: inherit;
+
+  > a,
+  > small,
+  > .small,
+  > small > a,
+  > .small > a {
+    color: inherit;
+  }
+}
+
+// Optional footer (stays gray in every modifier class)
+.panel-footer {
+  padding: $panel-footer-padding;
+  background-color: $panel-footer-bg;
+  border-top: 1px solid $panel-inner-border;
+  @include border-bottom-radius(($panel-border-radius - 1));
+}
+
+
+// List groups in panels
+//
+// By default, space out list group content from panel headings to account for
+// any kind of custom content between the two.
+
+.panel {
+  > .list-group,
+  > .panel-collapse > .list-group {
+    margin-bottom: 0;
+
+    .list-group-item {
+      border-width: 1px 0;
+      border-radius: 0;
+    }
+
+    // Add border top radius for first one
+    &:first-child {
+      .list-group-item:first-child {
+        border-top: 0;
+        @include border-top-radius(($panel-border-radius - 1));
+      }
+    }
+
+    // Add border bottom radius for last one
+    &:last-child {
+      .list-group-item:last-child {
+        border-bottom: 0;
+        @include border-bottom-radius(($panel-border-radius - 1));
+      }
+    }
+  }
+  > .panel-heading + .panel-collapse > .list-group {
+    .list-group-item:first-child {
+      @include border-top-radius(0);
+    }
+  }
+}
+// Collapse space between when there's no additional content.
+.panel-heading + .list-group {
+  .list-group-item:first-child {
+    border-top-width: 0;
+  }
+}
+.list-group + .panel-footer {
+  border-top-width: 0;
+}
+
+// Tables in panels
+//
+// Place a non-bordered `.table` within a panel (not within a `.panel-body`) and
+// watch it go full width.
+
+.panel {
+  > .table,
+  > .table-responsive > .table,
+  > .panel-collapse > .table {
+    margin-bottom: 0;
+
+    caption {
+      padding-left: $panel-body-padding;
+      padding-right: $panel-body-padding;
+    }
+  }
+  // Add border top radius for first one
+  > .table:first-child,
+  > .table-responsive:first-child > .table:first-child {
+    @include border-top-radius(($panel-border-radius - 1));
+
+    > thead:first-child,
+    > tbody:first-child {
+      > tr:first-child {
+        border-top-left-radius: ($panel-border-radius - 1);
+        border-top-right-radius: ($panel-border-radius - 1);
+
+        td:first-child,
+        th:first-child {
+          border-top-left-radius: ($panel-border-radius - 1);
+        }
+        td:last-child,
+        th:last-child {
+          border-top-right-radius: ($panel-border-radius - 1);
+        }
+      }
+    }
+  }
+  // Add border bottom radius for last one
+  > .table:last-child,
+  > .table-responsive:last-child > .table:last-child {
+    @include border-bottom-radius(($panel-border-radius - 1));
+
+    > tbody:last-child,
+    > tfoot:last-child {
+      > tr:last-child {
+        border-bottom-left-radius: ($panel-border-radius - 1);
+        border-bottom-right-radius: ($panel-border-radius - 1);
+
+        td:first-child,
+        th:first-child {
+          border-bottom-left-radius: ($panel-border-radius - 1);
+        }
+        td:last-child,
+        th:last-child {
+          border-bottom-right-radius: ($panel-border-radius - 1);
+        }
+      }
+    }
+  }
+  > .panel-body + .table,
+  > .panel-body + .table-responsive,
+  > .table + .panel-body,
+  > .table-responsive + .panel-body {
+    border-top: 1px solid $table-border-color;
+  }
+  > .table > tbody:first-child > tr:first-child th,
+  > .table > tbody:first-child > tr:first-child td {
+    border-top: 0;
+  }
+  > .table-bordered,
+  > .table-responsive > .table-bordered {
+    border: 0;
+    > thead,
+    > tbody,
+    > tfoot {
+      > tr {
+        > th:first-child,
+        > td:first-child {
+          border-left: 0;
+        }
+        > th:last-child,
+        > td:last-child {
+          border-right: 0;
+        }
+      }
+    }
+    > thead,
+    > tbody {
+      > tr:first-child {
+        > td,
+        > th {
+          border-bottom: 0;
+        }
+      }
+    }
+    > tbody,
+    > tfoot {
+      > tr:last-child {
+        > td,
+        > th {
+          border-bottom: 0;
+        }
+      }
+    }
+  }
+  > .table-responsive {
+    border: 0;
+    margin-bottom: 0;
+  }
+}
+
+
+// Collapsible panels (aka, accordion)
+//
+// Wrap a series of panels in `.panel-group` to turn them into an accordion with
+// the help of our collapse JavaScript plugin.
+
+.panel-group {
+  margin-bottom: $line-height-computed;
+
+  // Tighten up margin so it's only between panels
+  .panel {
+    margin-bottom: 0;
+    border-radius: $panel-border-radius;
+
+    + .panel {
+      margin-top: 5px;
+    }
+  }
+
+  .panel-heading {
+    border-bottom: 0;
+
+    + .panel-collapse > .panel-body,
+    + .panel-collapse > .list-group {
+      border-top: 1px solid $panel-inner-border;
+    }
+  }
+
+  .panel-footer {
+    border-top: 0;
+    + .panel-collapse .panel-body {
+      border-bottom: 1px solid $panel-inner-border;
+    }
+  }
+}
+
+// Panels
+
+@mixin panel-variant($border, $heading-text-color, $heading-bg-color, $heading-border) {
+  border-color: $border;
+
+  & > .panel-heading {
+    color: $heading-text-color;
+    background-color: $heading-bg-color;
+    border-color: $heading-border;
+
+    + .panel-collapse > .panel-body {
+      border-top-color: $border;
+    }
+    .badge {
+      color: $heading-bg-color;
+      background-color: $heading-text-color;
+    }
+  }
+  & > .panel-footer {
+    + .panel-collapse > .panel-body {
+      border-bottom-color: $border;
+    }
+  }
+}
+
+// Contextual variations
+.panel-default {
+  @include panel-variant($panel-default-border, $panel-default-text, $panel-default-heading-bg, $panel-default-border);
+}
+.panel-primary {
+  @include panel-variant($panel-primary-border, $panel-primary-text, $panel-primary-heading-bg, $panel-primary-border);
+}
+.panel-success {
+  @include panel-variant($panel-success-border, $panel-success-text, $panel-success-heading-bg, $panel-success-border);
+}
+.panel-info {
+  @include panel-variant($panel-info-border, $panel-info-text, $panel-info-heading-bg, $panel-info-border);
+}
+.panel-warning {
+  @include panel-variant($panel-warning-border, $panel-warning-text, $panel-warning-heading-bg, $panel-warning-border);
+}
+.panel-danger {
+  @include panel-variant($panel-danger-border, $panel-danger-text, $panel-danger-heading-bg, $panel-danger-border);
+}
+
+// input.form-control.ng-untouched.ng-pristine.ng-valid{
+//   display: none;
+// }
+// label.form-check-label{
+//   display: none;
+// }
+

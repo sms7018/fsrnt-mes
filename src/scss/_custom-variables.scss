@@ -1,0 +1,337 @@
+
+
+
+// Core Admin Variables
+
+$enable-sidebar-nav-rounded: false;
+
+$border-color: $gray-lighter;
+$layout-transition-speed: .25s;
+
+
+// Social Colors
+
+$facebook: #3b5998;
+$twitter: #00aced;
+$linkedin: #4875b4;
+$google-plus: #d34836;
+$flickr: #ff0084;
+$tumblr: #32506d;
+$xing: #026466;
+$github: #4183c4;
+$html5: #e34f26;
+$openid: #f78c40;
+$stack-overflow: #fe7a15;
+$youtube: #b00;
+$css3: #0170ba;
+$dribbble: #ea4c89;
+$google-plus: #bb4b39;
+$instagram: #517fa4;
+$pinterest: #cb2027;
+$vk: #45668e;
+$yahoo: #400191;
+$behance: #1769ff;
+$dropbox: #007ee5;
+$reddit: #ff4500;
+$spotify: #7ab800;
+$vine: #00bf8f;
+$foursquare: #1073af;
+$vimeo: #aad450;
+
+// Navbar
+
+$navbar-height:                     55px;
+$navbar-bg:                         #fff;
+$navbar-border: (
+  bottom: (
+    size:                       1px,
+    style:                      solid,
+    color:                      $border-color
+  )
+);
+$navbar-brand-width:                155px;
+$navbar-brand-bg:                   #fff;
+$navbar-brand-logo:                 url('../img/logo2.png');
+$navbar-brand-logo-size:            140px auto;
+$navbar-brand-border: (
+  bottom: (
+    size:                       1px,
+    style:                      solid,
+    color:                      $border-color
+  )
+);
+
+$navbar-color:                      rgba(0,0,0,.3);
+$navbar-hover-color:                rgba(0,0,0,.6);
+$navbar-active-color:               rgba(0,0,0,.8);
+$navbar-disabled-color:             rgba(0,0,0,.15);
+
+// Sidebar
+
+$sidebar-width:                     200px;
+$sidebar-padding:                   0;
+$sidebar-minimized-width:           50px;
+$sidebar-minimized-height:          $sidebar-minimized-width;
+$sidebar-compact-width:             150px;
+$sidebar-compact-height:            $sidebar-compact-width;
+$sidebar-color:                     #fff;
+$sidebar-bg:                        $gray-dark;
+$sidebar-header-bg:                 rgba(0,0,0,.2);
+$sidebar-footer-bg:                 rgba(0,0,0,.2);
+$sidebar-borders:                   none;
+$mobile-sidebar-width:              220px;
+
+// Sidebar Navigation
+
+$sidebar-nav-color:                 #fff;
+$sidebar-nav-title-padding-y:       .75rem;
+$sidebar-nav-title-padding-x:       1rem;
+$sidebar-nav-title-color:           $gray-lighter;
+$sidebar-nav-link-padding-y:        .75rem;
+$sidebar-nav-link-padding-x:        1rem;
+$sidebar-nav-link-color:            #fff;
+$sidebar-nav-link-bg:               transparent;
+$sidebar-nav-link-icon-color:       $text-muted;
+
+$sidebar-nav-link-borders:          0;
+$sidebar-nav-link-hover-color:      #fff;
+$sidebar-nav-link-hover-bg:         $brand-primary;
+$sidebar-nav-link-hover-icon-color: #fff !important;
+
+$sidebar-nav-link-hover-borders:    0;
+$sidebar-nav-link-active-color:     #fff;
+$sidebar-nav-link-active-bg:        lighten($sidebar-bg, 5%);
+$sidebar-nav-link-active-icon-color: $brand-primary;
+
+$sidebar-nav-link-active-borders:   0;
+
+$sidebar-nav-dropdown-color:        #fff;
+$sidebar-nav-dropdown-bg:           rgba(0,0,0,.2);
+$sidebar-nav-dropdown-borders:      0;
+
+// Top Navigation
+
+$top-nav-bg:                        #fff;
+$top-nav-color:                     $body-color;
+$top-nav-borders: (
+  bottom: (
+    size:                           1px,
+    style:                          solid,
+    color:                          $border-color
+  )
+);
+$top-nav-ul-borders: (
+  all: (
+    size:                           1px,
+    style:                          solid,
+    color:                          $border-color
+  )
+);
+
+$top-nav-hover-color:               #fff;
+$top-nav-hover-bg:                  $brand-primary;
+$top-nav-active-color:              #fff;
+$top-nav-active-bg:                 $brand-primary;
+$top-nav-height:                    $navbar-height - 15px;
+
+// Breadcrumb
+
+$breadcrumb-borders: (
+  bottom: (
+    size:                           1px,
+    style:                          solid,
+    color:                          $border-color
+  )
+);
+
+// Aside
+
+$aside-menu-width:                  250px;
+$aside-menu-color:                  $gray-dark;
+$aside-menu-bg:                     #fff;
+$aside-menu-borders: (
+  left: (
+    size:                           1px,
+    style:                          solid,
+    color:                          $border-color
+  )
+);
+
+$aside-menu-nav-padding-y:          .75rem;
+$aside-menu-nav-padding-x:          1rem;
+
+// Footer
+
+$footer-height: 50px;
+$footer-bg:     $gray-lightest;
+$footer-color:  $body-color;
+$footer-borders: (
+  top: (
+    size:                           1px,
+    style:                          solid,
+    color:                          $border-color
+  )
+);
+
+// Cards
+
+$card-icon-bg:                      transparent;
+$card-icon-color:                   $body-color;
+
+//== Form states and alerts
+//
+//## Define colors for form feedback states and, by default, alerts.
+
+$state-success-text:             #3c763d !default;
+$state-success-bg:               #dff0d8 !default;
+$state-success-border:           darken(adjust-hue($state-success-bg, -10), 5%) !default;
+
+$state-info-text:                #31708f !default;
+$state-info-bg:                  #d9edf7 !default;
+$state-info-border:              darken(adjust-hue($state-info-bg, -10), 7%) !default;
+
+$state-warning-text:             #8a6d3b !default;
+$state-warning-bg:               #fcf8e3 !default;
+$state-warning-border:           darken(adjust-hue($state-warning-bg, -10), 5%) !default;
+
+$state-danger-text:              #a94442 !default;
+$state-danger-bg:                #f2dede !default;
+$state-danger-border:            darken(adjust-hue($state-danger-bg, -10), 5%) !default;
+
+//== Typography
+//
+//## Font, line-height, and color for body text, headings, and more.
+
+$font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
+//** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
+$font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !default;
+$font-family-base:        $font-family-sans-serif !default;
+
+$font-size-base:          14px !default;
+$font-size-large:         ceil(($font-size-base * 1.25)) !default; // ~18px
+$font-size-small:         ceil(($font-size-base * 0.85)) !default; // ~12px
+
+$font-size-h1:            floor(($font-size-base * 2.6)) !default; // ~36px
+$font-size-h2:            floor(($font-size-base * 2.15)) !default; // ~30px
+$font-size-h3:            ceil(($font-size-base * 1.7)) !default; // ~24px
+$font-size-h4:            ceil(($font-size-base * 1.25)) !default; // ~18px
+$font-size-h5:            $font-size-base !default;
+$font-size-h6:            ceil(($font-size-base * 0.85)) !default; // ~12px
+
+//** Unit-less `line-height` for use in components like buttons.
+$line-height-base:        1.428571429 !default; // 20/14
+//** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
+$line-height-computed:    floor(($font-size-base * $line-height-base)) !default; // ~20px
+
+//** By default, this inherits from the `<body>`.
+$headings-font-family:    inherit !default;
+$headings-font-weight:    500 !default;
+$headings-line-height:    1.1 !default;
+$headings-color:          inherit !default;
+
+
+//
+//## Define common padding and border radius sizes and more. Values based on 14px text and 1.428 line-height (~20px to start).
+
+$padding-base-vertical:     6px !default;
+$padding-base-horizontal:   12px !default;
+
+$padding-large-vertical:    10px !default;
+$padding-large-horizontal:  16px !default;
+
+$padding-small-vertical:    5px !default;
+$padding-small-horizontal:  10px !default;
+
+$padding-xs-vertical:       1px !default;
+$padding-xs-horizontal:     5px !default;
+
+$line-height-large:         1.3333333 !default; // extra decimals for Win 8.1 Chrome
+$line-height-small:         1.5 !default;
+
+$border-radius-base:        4px !default;
+$border-radius-large:       6px !default;
+$border-radius-small:       3px !default;
+
+//** Global color for active items (e.g., navs or dropdowns).
+$component-active-color:    #fff !default;
+//** Global background color for active items (e.g., navs or dropdowns).
+$component-active-bg:       $brand-primary !default;
+
+//** Width of the `border` for generating carets that indicate dropdowns.
+$caret-width-base:          4px !default;
+//** Carets increase slightly in size for larger components.
+$caret-width-large:         5px !default;
+
+
+//== List group
+//
+//##
+
+//** Background color on `.list-group-item`
+$list-group-bg:                 #fff !default;
+//** `.list-group-item` border color
+$list-group-border:             #ddd !default;
+//** List group border radius
+$list-group-border-radius:      $border-radius-base !default;
+
+//** Background color of single list items on hover
+$list-group-hover-bg:           #f5f5f5 !default;
+//** Text color of active list items
+$list-group-active-color:       $component-active-color !default;
+//** Background color of active list items
+$list-group-active-bg:          $component-active-bg !default;
+//** Border color of active list elements
+$list-group-active-border:      $list-group-active-bg !default;
+//** Text color for content within active list items
+$list-group-active-text-color:  lighten($list-group-active-bg, 40%) !default;
+
+//** Text color of disabled list items
+$list-group-disabled-color:      $gray-light !default;
+//** Background color of disabled list items
+$list-group-disabled-bg:         $gray-lighter !default;
+//** Text color for content within disabled list items
+$list-group-disabled-text-color: $list-group-disabled-color !default;
+
+$list-group-link-color:         #555 !default;
+$list-group-link-hover-color:   $list-group-link-color !default;
+$list-group-link-heading-color: #333 !default;
+
+//== Panels
+//
+//##
+
+$panel-bg:                    #fff !default;
+$panel-body-padding:          15px !default;
+$panel-heading-padding:       10px 15px !default;
+$panel-footer-padding:        $panel-heading-padding !default;
+$panel-border-radius:         $border-radius-base !default;
+
+//** Border color for elements within panels
+$panel-inner-border:          #ddd !default;
+$panel-footer-bg:             #f5f5f5 !default;
+
+$panel-default-text:          $gray-dark !default;
+$panel-default-border:        #ddd !default;
+$panel-default-heading-bg:    #f5f5f5 !default;
+
+$panel-primary-text:          #fff !default;
+$panel-primary-border:        $brand-primary !default;
+$panel-primary-heading-bg:    $brand-primary !default;
+
+$panel-success-text:          $state-success-text !default;
+$panel-success-border:        $state-success-border !default;
+$panel-success-heading-bg:    $state-success-bg !default;
+
+$panel-info-text:             $state-info-text !default;
+$panel-info-border:           $state-info-border !default;
+$panel-info-heading-bg:       $state-info-bg !default;
+
+$panel-warning-text:          $state-warning-text !default;
+$panel-warning-border:        $state-warning-border !default;
+$panel-warning-heading-bg:    $state-warning-bg !default;
+
+$panel-danger-text:           $state-danger-text !default;
+$panel-danger-border:         $state-danger-border !default;
+$panel-danger-heading-bg:     $state-danger-bg !default;
+

@@ -1,0 +1,115 @@
+<!-- 로그인 -->
+<div *ngIf="!isAccept"  class="app-body" style="background-image: url('../assets/img/bgpattern2.png');">
+ <div class="app flex-row align-items-center">
+  <div class="container" style="width: 1553px;">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <div class="card-group mb-0">
+          <div class="card p-4">
+            <div class="card-block">
+              <h1 style="font-family: NanumGothicBold; font-weight: bold; font-size: 56px;">LOGIN</h1>
+              <p class="text-muted">사원 ID와 PASSWORD를 통해 로그인.</p>
+              <div class="input-group mb-3">
+                <span class="input-group-addon"><i class="icon-user"></i></span>
+                <input type="text" class="form-control" placeholder="사원 ID">
+              </div>
+              <div class="input-group mb-4">
+                <span class="input-group-addon"><i class="icon-lock"></i></span>
+                <input type="password" class="form-control" placeholder="사원 Password">
+              </div>
+              <div class="row">
+                <div class="col-6">
+                  <button type="button" (click)="login()" class="btn btn-primary px-4">로그인</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card card-inverse py-5 d-md-down-none" style="width: 50%; background-image: url('../../assets/img/ban.png'); background-size: cover; background-position: center;">
+            <div class="card-block text-center" >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<header class="app-header navbar" *ngIf="isAccept">
+    <ul class="nav navbar-nav mr-auto d-md-down-none">
+        <li class="nav-item">
+            <a class="nav-link navbar-toggler" href="#" appSidebarToggler>&#9776;</a>
+        </li>
+        <li>
+            <div class="nav-title" href="#">MES - For Cloud Connector</div>
+        </li>
+    </ul>
+    <a class="navbar-brand" href="#"></a>
+    
+    <button class="navbar-toggler d-lg-none" type="button" appMobileSidebarToggler>&#9776;</button>
+
+    <div class="nav navbar-nav ml-auto">
+        <a class="nav-title" href="" style="margin-right: 10px;">로그아웃</a>
+    </div>
+</header>
+
+<div *ngIf="isAccept"  class="app-body">
+    <div class="sidebar">
+        <nav class="sidebar-nav">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link" routerLinkActive="active" [routerLink]="['/dashboard']"><i class="icon-home"></i> Overview</a>
+                </li>
+                <li class="divider"></li>
+                    <li class="nav-title">
+                        MES
+                </li>
+                <li class="nav-item"> 
+                    <a class="nav-link" routerLinkActive="active" [routerLink]="['/line-process-monitoring']"><i class="icon-speedometer"></i> 라인&공정모니터링</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLinkActive="active" [routerLink]="['/schedule-manager']"><i class="icon-calendar"></i> 일정 관리</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLinkActive="active" [routerLink]="['/poor-manager']"><i class="icon-energy"></i> 품질 관리</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLinkActive="active" [routerLink]="['/stock-manager']"><i class="icon-basket-loaded"></i> 재고 관리</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLinkActive="active" [routerLink]="['/worker-manager']"><i class="icon-people"></i> 인적자원 관리</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLinkActive="active" [routerLink]="['/factory-environment']"><i class="icon-globe"></i> 공장 내부환경 관리</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLinkActive="active" [routerLink]="['/manager-setting']"><i class="icon-settings"></i> 관리자 설정</a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link" routerLinkActive="active" [routerLink]="['/google-chart']"> 구글 차트</a>
+                </li> -->
+            </ul>
+        </nav>
+    </div>
+
+
+    <!-- Main content -->
+    <main *ngIf="isAccept" class="main">
+        <!-- Breadcrumb -->
+        <ol class="breadcrumb">
+            <app-breadcrumbs></app-breadcrumbs>
+        </ol>
+
+        <div class="container-fluid">
+            <router-outlet></router-outlet>
+        </div>
+        <!-- /.conainer-fluid -->
+    </main>
+</div>
+
+
+<footer *ngIf="isAccept" class="app-footer">
+    <a href="http://www.soosang.com/smain.html">MES - For CloudConnector</a> &copy; 2017 creativeLabs.
+    <span class="float-right">Powered by <a href="http://www.soosang.com/smain.html">MES - For CloudConnector</a>
+    </span>
+</footer>
